@@ -16,7 +16,7 @@ class CustomImageContainer extends StatelessWidget {
         ),
         boxShadow: [
           BoxShadow(
-            // color: Colors.black.withOpacity(0.5),
+            color: Colors.white,
             spreadRadius: 5,
             blurRadius: 5,
             // offset: Offset(0, 10),

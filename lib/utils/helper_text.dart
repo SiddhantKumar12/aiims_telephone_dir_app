@@ -2,6 +2,6 @@ import 'package:flutter/material.dart';
 
 class CommonText {
   static String aiims = "AIIMS";
-  static String cycle = "AIIMS CYCLE";
+  static String appName = "Telephone Directory";
   static String widgetExceptionText = "WidgetException";
 }

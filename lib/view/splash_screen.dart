@@ -4,7 +4,7 @@ import 'package:aiims_telephone_directory/utils/image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'component/myText.dart';
+import '../component/myText.dart';
 
 class SplashScreen extends StatefulWidget {
   @override

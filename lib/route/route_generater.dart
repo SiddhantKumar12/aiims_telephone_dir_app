@@ -1,8 +1,8 @@
 import 'package:aiims_telephone_directory/route/pageroute.dart';
 import 'package:flutter/material.dart';
 
-import '../splash_screen.dart';
-import '../view/welcome.dart';
+import '../view/splash_screen.dart';
+import '../view/dashboard.dart';
 
 class MyRoutes {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -15,7 +15,7 @@ class MyRoutes {
 
       ///Welcome screen
       case RoutePath.welcome:
-        return MaterialPageRoute(builder: (_) => const WelcomeScreen());
+        return MaterialPageRoute(builder: (_) => const DashBoardScreen());
       //
       // ///Login screen
       // case RoutePath.login:

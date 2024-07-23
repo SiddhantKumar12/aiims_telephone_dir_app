@@ -1,0 +1,112 @@
+[
+  {
+    "name": "AIIMS Exchange",
+    "phone": "01126588500",
+    "image": "R.drawable.call"
+  },
+  {
+    "name": "Central Blood Bank",
+    "phone": "01126594438",
+    "image": "R.drawable.call"
+  },
+  {
+    "name": "Central admission Office/Enquiry",
+    "phone": "01126588999",
+    "image": "R.drawable.call"
+  },
+  {
+    "name": "Control Room",
+    "phone": "01126589279",
+    "image": "R.drawable.call"
+  },
+  {
+    "name": "Director Office",
+    "phone": "01126594800",
+    "image": "R.drawable.call"
+  },
+  {
+    "name": "EHS Dispensary",
+    "phone": "01126594328",
+    "image": "R.drawable.call"
+  },
+  {
+    "name": "Emergency Department-Main Hospital",
+    "phone": "01126594706",
+    "image": "R.drawable.call"
+  },
+  {
+    "name": "Emergency Department-Jpna Troma",
+    "phone": "01126162891",
+    "image": "R.drawable.call"
+  },
+  {
+    "name": "Emergency Department-Dr RP Center",
+    "phone": "01126589461",
+    "image": "R.drawable.call"
+  },
+  {
+    "name": "Engineering Control Room",
+    "phone": "01126594423",
+    "image": "R.drawable.call"
+  },
+  {
+    "name": "Examination Section",
+    "phone": "01126594499",
+    "image": "R.drawable.call"
+  },
+  {
+    "name": "Eye Donation",
+    "phone": "01126593060",
+    "image": "R.drawable.call"
+  },
+  {
+    "name": "Fire Control Room",
+    "phone": "01126594269",
+    "image": "R.drawable.call"
+  },
+  {
+    "name": "Medical Superintendent",
+    "phone": "01126594700",
+    "image": "R.drawable.call"
+  },
+  {
+    "name": "National Poison Information Center",
+    "phone": "01126589391",
+    "image": "R.drawable.call"
+  },
+  {
+    "name": "Organ Retrieval Information Center/n(ORBO)",
+    "phone": "01126588360",
+    "image": "R.drawable.call"
+  },
+  {
+    "name": "Paging & Mobile Services",
+    "phone": "01126594662",
+    "image": "R.drawable.call"
+  },
+  {
+    "name": "Police Post, AIIMS",
+    "phone": "01126593345",
+    "image": "R.drawable.call"
+  },
+  {
+    "name": "Sanitation Office",
+    "phone": "01126594367",
+    "image": "R.drawable.call"
+  },
+  {
+    "name": "Security Control Room",
+    "phone": "01126593333",
+    "image": "R.drawable.call"
+  },
+  {
+    "name": "Transport Office",
+    "phone": "01126593402",
+    "image": "R.drawable.call"
+  },
+  {
+    "name": "Shubchintak (AIDS Helpline)",
+    "phone": "01126588333",
+    "image": "R.drawable.call"
+  }
+]
