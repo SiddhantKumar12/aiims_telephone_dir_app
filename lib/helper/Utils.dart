@@ -9,6 +9,7 @@ class Utils {
         toastLength: Toast.LENGTH_LONG,
         gravity: ToastGravity.BOTTOM,
         textColor: Colors.white,
-        fontSize: 20.sp);
+        backgroundColor: Colors.green,
+        fontSize: 14.sp);
   }
 }

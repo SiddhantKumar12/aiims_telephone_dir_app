@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class MyTextForm extends StatefulWidget {
   final String? initialValue;
-  final void Function(String) onChanged;
+  final void Function(String)? onChanged;
   final String label;
   final double? labelFontSize;
   final dynamic validatorLabel;
@@ -12,8 +12,8 @@ class MyTextForm extends StatefulWidget {
   final TextEditingController? controller;
   final TextInputType? keyboardType;
   final bool obscured;
-  final bool validator;
-  final dynamic suffixIcon;
+  final bool? validator;
+  final dynamic prefixIcon;
   final dynamic validatorFunc;
   final dynamic maxline;
   final TextInputAction? textInputAction;
@@ -24,15 +24,16 @@ class MyTextForm extends StatefulWidget {
       this.inputFormatters,
       this.validatorLabel,
       this.initialValue,
-      required this.onChanged,
+      this.onChanged,
       this.controller,
       this.obscured = false,
-      this.suffixIcon,
+      this.prefixIcon,
       this.keyboardType,
       this.maxline,
-      required this.validator,
+      this.validator,
       this.validatorFunc,
-      this.labelFontSize, this.textInputAction});
+      this.labelFontSize,
+      this.textInputAction});
 
   @override
   @override
@@ -78,22 +79,32 @@ class _MyTextForm extends State<MyTextForm> {
           },
       controller: widget.controller ?? _controller,
       onChanged: widget.onChanged,
-      keyboardType: widget.keyboardType,
+      keyboardType: widget.keyboardType, cursorColor: Colors.green.shade600,
       textInputAction: widget.textInputAction ?? TextInputAction.next,
       decoration: InputDecoration(
-
-          //contentPadding: EdgeInsets.all(22.h),
-          suffixIcon: widget.suffixIcon,
-          labelText: widget.label,
+          prefixIcon: widget.prefixIcon,
+          labelText: widget.label.toUpperCase(),
           labelStyle: TextStyle(
-            fontSize: 18.sp,
-            fontWeight: FontWeight.bold,
-            color: Color(0xff0c588a),
+            fontSize: 14.sp,
+            fontWeight: FontWeight.w400,
+            color: Colors.black87,
           ),
           errorMaxLines: 2,
           hintStyle: TextStyle(fontSize: 10.sp),
           errorStyle: TextStyle(fontSize: 16.sp),
-          filled: false),
+          filled: false,
+          focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: Colors.green.shade600, width: 2.0),
+          ),
+          errorBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: Colors.red, width: 2.0),
+          ),
+          focusedErrorBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: Colors.red, width: 2.0),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: Colors.grey, width: 1.0),
+          )),
       obscureText: widget.obscured,
     );
   }

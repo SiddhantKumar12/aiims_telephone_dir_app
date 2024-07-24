@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../modal/helpline_number.dart'; // For rootBundle
+import '../../modal/helpline_number.dart'; // For rootBundle
 
 class ContactListPage extends StatefulWidget {
   @override

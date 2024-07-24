@@ -1,6 +1,7 @@
 import 'package:aiims_telephone_directory/route/pageroute.dart';
 import 'package:flutter/material.dart';
 
+import '../view/Login.dart';
 import '../view/splash_screen.dart';
 import '../view/dashboard.dart';
 
@@ -17,11 +18,11 @@ class MyRoutes {
       case RoutePath.welcome:
         return MaterialPageRoute(builder: (_) => const DashBoardScreen());
       //
-      // ///Login screen
-      // case RoutePath.login:
-      //   return MaterialPageRoute(
-      //     builder: (_) => LoginScreen(),
-      //   );
+      ///Login screen
+      case RoutePath.login:
+        return MaterialPageRoute(
+          builder: (_) => const LoginScreen(),
+        );
       //
       // /// OTP Verify Screen
       // case RoutePath.otpVerify:

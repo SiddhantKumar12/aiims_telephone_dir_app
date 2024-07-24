@@ -27,7 +27,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: CustomImageContainer(
-      imagepath: ImagePath.splashBackground,
+      imagePath: ImagePath.splashBackground,
       child: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
