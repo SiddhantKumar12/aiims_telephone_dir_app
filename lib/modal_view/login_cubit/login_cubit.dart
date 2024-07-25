@@ -2,8 +2,8 @@ import 'package:aiims_telephone_directory/modal/user_modal.dart';
 import 'package:bloc/bloc.dart';
 import 'package:dio/dio.dart';
 import 'package:meta/meta.dart';
-
 import '../../helper/dio_error_helper.dart';
+import '../../helper/mycommon_text.dart';
 import 'login_repo.dart';
 
 part 'login_state.dart';
@@ -11,17 +11,17 @@ part 'login_state.dart';
 class LoginCubit extends Cubit<LoginState> {
   LoginCubit() : super(LoginInitial());
 
-  void getLogin() async {
+  void getLogin({required String empId, required String otp}) async {
     emit(LoginLoading());
     try {
-      final response = await LoginRepo.getLogin();
+      final response = await LoginRepo.getLogin(empId: empId, otp: otp);
 
       if (response.statusCode == 200) {
-        UserModal cadreModal = UserModal.fromJson(response.data);
+        UserModal userModal = UserModal.fromJson(response.data);
 
-        emit(LoginLoaded(userModal: cadreModal));
+        emit(LoginLoaded(userModal: userModal));
       } else {
-        emit(LoginError(error: response.data['error']));
+        emit(LoginError(error: response.data[MyCommonText.message]));
       }
     } on DioException catch (e) {
       emit(LoginError(error: handleDioError(e)));

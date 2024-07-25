@@ -1,7 +1,7 @@
 import 'package:aiims_telephone_directory/route/pageroute.dart';
+import 'package:aiims_telephone_directory/view/login_screen.dart';
+import 'package:aiims_telephone_directory/view/otp_screen.dart';
 import 'package:flutter/material.dart';
-
-import '../view/Login.dart';
 import '../view/splash_screen.dart';
 import '../view/dashboard.dart';
 
@@ -21,14 +21,20 @@ class MyRoutes {
       ///Login screen
       case RoutePath.login:
         return MaterialPageRoute(
-          builder: (_) => const LoginScreen(),
+          builder: (_) => LoginScreen(),
         );
       //
-      // /// OTP Verify Screen
-      // case RoutePath.otpVerify:
-      //   return MaterialPageRoute(
-      //     builder: (_) => VerifyOtpScreen(),
-      //   );
+      /// OTP Verify Screen
+      case RoutePath.otpVerify:
+        final args = settings.arguments as Map<String, dynamic>;
+        final String employeeID = args['empId']!;
+        final String otp = args['otp']!;
+        return MaterialPageRoute(
+          builder: (_) => OTPScreen(
+            empId: employeeID,
+            otp: otp,
+          ),
+        );
 
       // /// Edit Profile Screen
       //   case RoutePath.editProfile:

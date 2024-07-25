@@ -6,16 +6,14 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Utils {
   //dialog
-  // static showLoadingProgress(BuildContext context) {
-  //   return showDialog(
-  //     context: context,
-  //     barrierDismissible: false,
-  //     builder: (context) => SpinKitCubeGrid(
-  //       color: Theme.of(context).secondaryHeaderColor,
-  //       size: 50,
-  //     ),
-  //   );
-  // }
+  static showLoadingProgress(BuildContext context) {
+    return showDialog(
+        context: context,
+        barrierDismissible: false,
+        builder: (context) => Center(
+              child: CircularProgressIndicator(),
+            ));
+  }
 
   static showDialogBox({
     required BuildContext context,
