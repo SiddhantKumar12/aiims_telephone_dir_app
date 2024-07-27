@@ -36,8 +36,8 @@ class MyApp extends StatelessWidget {
           ),
         ],
         child: MaterialApp(
-          // initialRoute: RoutePath.splash,
-          // onGenerateRoute: MyRoutes.generateRoute,
+          initialRoute: RoutePath.splash,
+          onGenerateRoute: MyRoutes.generateRoute,
           debugShowCheckedModeBanner: false,
           title: 'Flutter Demo',
           theme: ThemeData(
@@ -48,7 +48,7 @@ class MyApp extends StatelessWidget {
             primaryColor: Colors.green,
             useMaterial3: true,
           ),
-          home: HomeScreen(),
+          // home: HomeScreen(),
         ),
       ),
     );
