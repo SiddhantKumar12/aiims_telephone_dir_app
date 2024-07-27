@@ -2,6 +2,7 @@ import 'package:aiims_telephone_directory/modal_view/get_otp/get_otp_cubit.dart'
 import 'package:aiims_telephone_directory/modal_view/login_cubit/login_cubit.dart';
 import 'package:aiims_telephone_directory/route/pageroute.dart';
 import 'package:aiims_telephone_directory/route/route_generater.dart';
+import 'package:aiims_telephone_directory/view/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -35,8 +36,8 @@ class MyApp extends StatelessWidget {
           ),
         ],
         child: MaterialApp(
-          initialRoute: RoutePath.splash,
-          onGenerateRoute: MyRoutes.generateRoute,
+          // initialRoute: RoutePath.splash,
+          // onGenerateRoute: MyRoutes.generateRoute,
           debugShowCheckedModeBanner: false,
           title: 'Flutter Demo',
           theme: ThemeData(
@@ -47,7 +48,7 @@ class MyApp extends StatelessWidget {
             primaryColor: Colors.green,
             useMaterial3: true,
           ),
-          //home: LanguageSelectionPage(),
+          home: HomeScreen(),
         ),
       ),
     );
